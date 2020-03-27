@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(73,100,111,0.9);
+    display: flex;
+    justify-content: center;
+}
+:root{
+    --main-bg-color: white;
+    --user-im-size: 130px;
+    --user-im-border: 4px;
+}
+.userCardContainer + .userCardContainer {
+    margin-left: 130px;
+}
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.userCardContainer{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 70px 0;
+    width: 320px;
+    max-width: 320px;
+    min-width: 120px;
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 20px 5px rgba(255,255,255,1);
+    /*align-items  align-content*/
+}
+.userCardContainer > header {
+    background-image: url("https://wallpapershome.ru/images/wallpapers/les-3840x2160-gora-tuman-14977.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+.userInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px 20px;
+    flex-grow: 1;
+}
+.userInfoContainer > footer {
+    margin-top: auto;
+}
+.userImageContainer > img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 5px;
+    border-color:  rgba(8,64,0,0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    object-fit: cover;
+    margin-top: -50%;
+}
+.userInfoContainer > h2 {
+    color: rgb(73,100,111);
+    font-family: 'Baloo 2',sans-serif;
+    margin-top: 10px;
+}
+.userInfoContainer > h4 {
+    color: rgb(73,100,111);
+    font-family: 'Baloo 2',sans-serif;
+    margin-top: -10px;
+}
+.userInfoContainer > h5 {
+    color: rgb(73,100,111);
+    font-family: 'Baloo 2',sans-serif;
+    margin-top: 20px;
+}
+.contact{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+}
+.contact + .contact {
+    margin-left: 15px;
+}
